@@ -8,7 +8,7 @@ interface inputType{
 
 
 
-export const Input = ((props:inputType, ref) => {
+export const Input = forwardRef((props:inputType, ref) => {
     return(
         <TextField
             variant= "outlined"

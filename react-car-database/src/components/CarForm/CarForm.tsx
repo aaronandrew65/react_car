@@ -49,19 +49,19 @@ export const CarForm =(props:CarFormProps) => {
             <form onSubmit={handleSubmit(onSubmit)}>
                 <div>
                     <label htmlFor="make">Car Make</label>
-                    <Input {...register('make')} make="make" placeholder='Make' />
+                    <Input {...register('make')} name="make" placeholder='Make' />
                 </div>
                 <div>
                     <label htmlFor="model">Car Model</label>
-                    <Input {...register('model')} model="model" placeholder='Model' />
+                    <Input {...register('model')} name="model" placeholder='Model' />
                 </div>
                 <div>
                     <label htmlFor="year">Year</label>
-                    <Input {...register('year')} year="year" placeholder='Year' />
+                    <Input {...register('year')} name="year" placeholder='Year' />
                 </div>
                 <div>
                     <label htmlFor="make">Car Color</label>
-                    <Input {...register('color')} color="color" placeholder='Color' />
+                    <Input {...register('color')} name="color" placeholder='Color' />
                 </div>
                 <Button type='submit'>Submit</Button>
             </form>

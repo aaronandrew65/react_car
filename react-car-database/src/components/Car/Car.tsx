@@ -172,8 +172,8 @@ export const Car= withRouter((props:CarProps) => {
 
     console.log(props);
     const {history} = props;
-    const classes = useStyles;
-    const theme = useTheme;
+    const classes = useStyles();
+    const theme = useTheme();
     const [open, setOpen] = useState(false);
     const [dialogOpen, setDialogOpen] = useState(false);
 
@@ -196,7 +196,7 @@ export const Car= withRouter((props:CarProps) => {
     const itemsList = [
         {
             text: 'Home',
-            onclick: () => history.push('/')
+            onClick: () => history.push('/')
         },
         {
             // text: 'Sign In',
@@ -204,11 +204,11 @@ export const Car= withRouter((props:CarProps) => {
         },
         {
             text: 'About',
-            onclick: () => history.push('/about')
+            onClick: () => history.push('/about')
         },
         {
             text: 'Contact',
-            onclick: () => history.push('/contact')
+            onClick: () => history.push('/contact')
         },
     ];
 
