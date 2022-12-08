@@ -30,7 +30,7 @@ import ChevronRightIcon from '@material-ui/icons/ChevronRight'
 import clsx from 'clsx';
 import { RouteComponentProps, withRouter, Switch, Route } from "react-router-dom";
 import { Datatable } from '../../components/DataTable';
-import { CarForm } from '../CarForm'
+import { CarForm } from '../CarForm';
 
 interface CarProps{
     history: RouteComponentProps["history"];
@@ -148,7 +148,7 @@ const useStyles = makeStyles((theme: Theme) => createStyles({
     },
     toolbar:{
       display: 'flex',
-      backgroundColor: '#003155',
+      backgroundColor: 'gray',
       color: 'white',
       fontFamily: "Georgia, 'Times New Roman', Times, serif",
     },
@@ -175,6 +175,7 @@ export const Car= withRouter((props:CarProps) => {
     const classes = useStyles();
     const theme = useTheme();
     const [open, setOpen] = useState(false);
+
     const [dialogOpen, setDialogOpen] = useState(false);
 
     const handleDrawerOpen = () => {
@@ -186,7 +187,7 @@ export const Car= withRouter((props:CarProps) => {
     };
 
     const handleDialogClickOpen = () => {
-        setDialogOpen(true)
+        setDialogOpen(open)
     };
 
     const handleDialogClickClose = () => {

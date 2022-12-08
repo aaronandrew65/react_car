@@ -2,13 +2,13 @@ import React from 'react'
 import { makeStyles } from '@material-ui/core';
 import Button from '@material-ui/core/Button';
 import { Link } from 'react-router-dom';
-import Digits from '../../assets/images/logo192.png';
+import Digits from '../../assets/images/images.png';
 
 
 const useStyles = makeStyles({
     logo: {
         content: `url(${Digits})`,
-        maxWidth: '20%',
+        maxWidth: '30%',
         height: 'auto',
     },
     navlogo: {
@@ -30,9 +30,9 @@ const useStyles = makeStyles({
         flexDirection: 'row',
     },
     navbar: {
-        backgroundColor: '#003155',
+        backgroundColor: 'gray',
         zIndex: 1,
-        borderBottom: '1px solid grey',
+        borderBottom: '3px solid grey',
         position: 'fixed'
     },
     navbarItem: {
@@ -40,7 +40,7 @@ const useStyles = makeStyles({
         textDecoration: 'none',
     },
     p5: {
-        padding: '5px'
+        padding: '6px'
     },
     spaceBetween: {
         justifyContent: 'space-between',

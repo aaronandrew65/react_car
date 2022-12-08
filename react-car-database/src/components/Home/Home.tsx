@@ -12,9 +12,10 @@ interface Props{
 
 const useStyles = makeStyles({
     background: {
-        backgroundImage: `linear-gradient(rgba(0, 49, 85) 0%, rgba(121,147,163,1) 47%, rgba(249,249,249,1) 100%)`,
+        // backgroundImage: `linear-gradient(rgba(0, 49, 85) 0%, rgba(121,147,163,1) 47%, rgba(249,249,249,1) 100%)`,
+        backgroundColor: '#002D62',
         width: '100%',
-        height: '90%',
+        height: '100%',
         backgroundPosition: 'center',
         position: 'fixed',
         zIndex: -1,

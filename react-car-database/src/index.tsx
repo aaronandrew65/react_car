@@ -10,30 +10,10 @@ import {Provider} from 'react-redux';
 import { store } from './redux/store';
 
 
-// const temp_props = "Aaron's Database"
 
-
-
-// const root = ReactDOM.createRoot(
-//   document.getElementById('root') as HTMLElement
-// );
-// root.render(
-//   <React.StrictMode>
-//     <Provider store={store}>
-//     <Router>
-//       <Routes>
-//         <Route path="/" element={<Home title={temp_props}/>}/>
-//         <Route path="/about" element={<About/>}/>
-//         <Route path="contact/" element={<Contact/>}/>
-//         <Route path="/" element={<Car/>}/>
-//       </Routes>
-//     </Router>
-//     </Provider>
-
-//   </React.StrictMode>
-// );
-
-const temp_props = "Aaron's Database"
+const temp_props = "Car Database"
+const t_props = "Contact"
+const a_props = "About"
 
 ReactDOM.render(
   <React.StrictMode>
@@ -51,10 +31,10 @@ ReactDOM.render(
           <Car></Car>
         </Route>
         <Route path='/contact'>
-          <Contact></Contact>
+          <Contact title = {t_props}></Contact>
         </Route>
         <Route path='/about'>
-          <About></About>
+          <About title={a_props}></About>
         </Route>
 
 
