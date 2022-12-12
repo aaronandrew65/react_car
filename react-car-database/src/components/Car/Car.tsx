@@ -200,8 +200,8 @@ export const Car= withRouter((props:CarProps) => {
             onClick: () => history.push('/')
         },
         {
-            // text: 'Sign In',
-            // onclick: () => history.push('/signin')
+            text: 'Sign In',
+            onclick: () => history.push('/signin')
         },
         {
             text: 'About',
