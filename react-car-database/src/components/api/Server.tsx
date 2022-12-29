@@ -1,4 +1,4 @@
-let token = 'c146007cc70c51b62ee07c2cdd1fb760bf4adc929c4b68ed';
+let token = 'c146007cc70c51b62ee07c2cdd1fb760bf4adc929c4b68ed'
 
 export const server_calls = {
     get: async () => {
@@ -16,6 +16,7 @@ export const server_calls = {
 
         return await response.json()
     },
+
     create: async(data: any = {}) => {
         const response = await fetch(`https://montoya-car-database.herokuapp.com/api/cars`,{
             method: 'POST',
@@ -33,7 +34,7 @@ export const server_calls = {
         return await response.json()
     },
     update: async (id:string, data:any = {}) => {
-        const response = await fetch(`https://my-phonebook-ct-main.herokuapp.com/api/cars/${id}`, {
+        const response = await fetch(`https://montoya-car-database.herokuapp.com/api/cars/${id}`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -43,7 +44,7 @@ export const server_calls = {
         });
     },
     delete: async(id:string) => {
-        const response = await fetch(`https://my-phonebook-ct-main.herokuapp.com/api/cars/${id}`,{
+        const response = await fetch(`https://montoya-car-database.herokuapp.com/api/cars/${id}`,{
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json',

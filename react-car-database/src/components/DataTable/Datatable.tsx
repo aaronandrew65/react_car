@@ -46,8 +46,8 @@ export const Datatable = () => {
         setTimeout( () => {window.location.reload(); }, 1000)
     }
 
-    // console.log(gridData.data.id!);
-    // console.log(`testing for data ${carData}`)
+    console.log(gridData.data.id!);
+    console.log(`testing for data ${carData}`)
 
   return (
     <div style={{ height: 400, width:'100%'}}>
@@ -55,7 +55,7 @@ export const Datatable = () => {
     <DataGrid rows={ carData } columns={  columns } pageSize={5} checkboxSelection={true}
     onSelectionModelChange={ (item) => {
         setSelectionModel(item)
-        // console.log(item)
+        console.log(item)
     }}
     />
 

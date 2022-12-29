@@ -1,6 +1,6 @@
-import React , {useState} from 'react'
+import React, { useState } from 'react'
 import firebase from 'firebase/app';
-import { useAuth,  AuthCheck } from 'reactfire';
+import { useAuth, AuthCheck } from 'reactfire';
 import 'firebase/auth';
 import { Input } from '../SharedComponents/input';
 import { Container, Button, makeStyles, Typography, Snackbar,  } from '@material-ui/core';
@@ -57,9 +57,7 @@ interface SignInProps{
     match: RouteComponentProps['match'];
   }
 
-
-
-  export const SignIn = withRouter( (props:SignInProps) => {
+export const SignIn = withRouter( (props:SignInProps) => {
 
     const auth = useAuth();
     const classes = useStyles();

@@ -23,7 +23,7 @@ export const CarForm =(props:CarFormProps) => {
     const dispatch = useDispatch();
     const store = useStore();
     const make = useSelector<CarState>(state => state.make);
-    const { register, handleSubmit } = useForm({})
+    const { register, handleSubmit } = useForm({ })
 
     const onSubmit = (data:any, event:any) => {
         console.log(props.id)

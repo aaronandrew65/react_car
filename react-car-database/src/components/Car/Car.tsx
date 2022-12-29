@@ -1,11 +1,11 @@
 import React, {useState}  from 'react'
-import { useGetData } from '../../custom-hooks'
-import { Link } from 'react-router-dom';
-import {Paper} from '@material-ui/core';
+// import { useGetData } from '../../custom-hooks'
+// import { Link } from 'react-router-dom';
+// import {Paper} from '@material-ui/core';
 import { Drawer as MUIDrawer, 
     ListItem, 
     List, 
-    ListItemIcon, 
+    // ListItemIcon, 
     ListItemText, 
     Theme,
     useTheme, 
@@ -28,7 +28,7 @@ import MenuIcon from '@material-ui/icons/Menu'
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight'
 import clsx from 'clsx';
-import { RouteComponentProps, withRouter, Switch, Route } from "react-router-dom";
+import { RouteComponentProps, withRouter } from "react-router-dom";
 import { Datatable } from '../../components/DataTable';
 import { CarForm } from '../CarForm';
 
@@ -187,7 +187,7 @@ export const Car= withRouter((props:CarProps) => {
     };
 
     const handleDialogClickOpen = () => {
-        setDialogOpen(open)
+        setDialogOpen(true)
     };
 
     const handleDialogClickClose = () => {
@@ -235,7 +235,7 @@ export const Car= withRouter((props:CarProps) => {
                         </DialogContent>
                         <DialogActions>
                             <Button onClick={handleDialogClickClose} color="primary">Cancel</Button>
-                            <Button onClick={handleDialogClickOpen} color="primary">Done</Button>
+                            <Button onClick={handleDialogClickClose} color="primary">Done</Button>
                         </DialogActions>
                     </Dialog>
                     {/* End dialog pop-up */}

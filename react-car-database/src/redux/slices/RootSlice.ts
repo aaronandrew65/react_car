@@ -12,7 +12,7 @@ const rootSlice = createSlice({
         chooseMake: (state, action) => {state.make = action.payload},
         chooseModel: (state, action) => {state.model = action.payload},
         chooseYear: (state, action) => {state.year = action.payload},
-        chooseColor: (state, action) => {state.color = action.payload}
+        chooseColor: (state, action) => {state.color = action.payload},
     }
 })
 
