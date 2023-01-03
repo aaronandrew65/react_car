@@ -15,7 +15,6 @@ const columns: GridColDef[]= [
     {field: 'make', headerName: 'Car Make', flex: 1},
     {field: 'model', headerName: 'Model', flex: 1},
     {field: 'year', headerName: 'Year', flex: 1},
-    {field: 'color', headerName: 'Color', flex: 1 }
 ];
 
 interface gridData {
@@ -52,14 +51,15 @@ export const Datatable = () => {
   return (
     <div style={{ height: 400, width:'100%'}}>
         <h2>My Cars</h2>
-    <DataGrid rows={ carData } columns={  columns } pageSize={5} checkboxSelection={true}
+    <div style={{backgroundColor: 'white', height: 400, width: '100%'}}>
+    <DataGrid rows={ carData } columns={  columns } pageSize={6} checkboxSelection={true}
     onSelectionModelChange={ (item) => {
         setSelectionModel(item)
         console.log(item)
-    }}
-    />
+    }}/>
+    </div>
 
-    <Button onClick={handleOpen}>Update</Button>
+    <Button color= "primary" variant="contained" onClick={handleOpen}>Update</Button>
     <Button variant="contained" color="secondary" onClick={deleteData}>Delete</Button>
 
     {/* {Idalog pop-up} */}

@@ -2,14 +2,14 @@ import React from 'react'
 import { makeStyles } from '@material-ui/core';
 import Button from '@material-ui/core/Button';
 import { Link } from 'react-router-dom';
-import Digits from '../../assets/images/images.png';
+import Digits from '../../assets/images/image_processing20200520-13900-letxa.png';
 
 
 const useStyles = makeStyles({
     logo: {
         content: `url(${Digits})`,
-        maxWidth: '30%',
-        height: 'auto',
+        maxWidth: '100%',
+        height: '10vh',
     },
     navlogo: {
         display: 'flex',
@@ -30,7 +30,7 @@ const useStyles = makeStyles({
         flexDirection: 'row',
     },
     navbar: {
-        backgroundColor: 'gray',
+        backgroundColor: 'black',
         zIndex: 1,
         borderBottom: '3px solid grey',
         position: 'fixed'
@@ -43,7 +43,7 @@ const useStyles = makeStyles({
         padding: '6px'
     },
     spaceBetween: {
-        justifyContent: 'space-between',
+        justifyContent: 'flex-end',
     },
     alignCenter: {
         alignItems: 'center'
@@ -52,7 +52,7 @@ const useStyles = makeStyles({
         listStyleType: 'none',
     },
     width60: {
-        width: '60%',
+        width: '90%',
     },
     width100: {
         width: '100%'
@@ -70,7 +70,7 @@ export const Navbar = () => {
     const classes = useStyles();
 
     return (
-    <div className={`${classes.row} ${classes.navbar} ${classes.width100} ${classes.alignCenter} ${classes.p5} ${classes.spaceBetween}`}>
+    <div className={`${classes.row} ${classes.navbar} ${classes.width100} ${classes.alignCenter} ${classes.p5} `}>
         <div className={`${classes.navlogo}`}>
             <Link to ='/' className={`${classes.logo} ${classes.p5}`}/>
         </div>
@@ -91,11 +91,7 @@ export const Navbar = () => {
                         <Link to='/About' className={`${classes.navbarItem} ${classes.psides}`}>About Us</Link>
                     </Button>
                 </li>
-                <li>
-                    <Button>
-                        <Link to='/signin' className={`${classes.navbarItem} ${classes.psides}`}>Sign In</Link>
-                    </Button>
-                </li>
+                
             </ul>
         </div>
         

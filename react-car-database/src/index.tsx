@@ -11,7 +11,7 @@ import { store } from './redux/store';
 import { SignIn } from './components';
 
 
-const temp_props = "Car Database"
+const temp_props = "Gothem City Car Database"
 const t_props = "Contact"
 const a_props = "About"
 

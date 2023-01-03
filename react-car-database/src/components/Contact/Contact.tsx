@@ -14,7 +14,7 @@ interface Props{
 
 const useStyles = makeStyles({
   background: {
-      backgroundColor: '#002244',
+      // backgroundColor: '#002244',
       width: '100%',
       height: '100%',
       backgroundPosition: 'center',
@@ -27,31 +27,34 @@ const useStyles = makeStyles({
       top: '20%',
       left: '50%',
       transform: 'translate(-50%, -50%)',
-      color: 'white',
+      color: 'Black',
   },
   sub_text1: {
     textAlign: 'center',
-    position: 'relative',
-    top: '50%',
+    position: 'fixed',
+    top: '35%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
     color: 'white',
+    backgroundColor: 'black',
   },
   sub_text2: {
     textAlign: 'center',
-    position: 'relative',
-    top: '20%',
-    left: '50%',
+    position: 'fixed',
+    top: '35%',
+    left: '30%',
     transform: 'translate(-50%, -50%)',
     color: 'white',
+    backgroundColor: 'black'
   },
   sub_text3: {
     textAlign: 'center',
-    position: 'relative',
-    top: '50%',
-    left: '50%',
+    position: 'fixed',
+    top: '35%',
+    left: '70%',
     transform: 'translate(-50%, -50%)',
     color: 'white',
+    backgroundColor: 'black'
   }
 });
 

@@ -62,7 +62,7 @@ const useStyles = makeStyles((theme: Theme) => createStyles({
     text: {
         display: 'flex',
         flexDirection: 'column',
-        color: '#4ef3b4',
+        color: 'white',
         textDecoration: 'none',
         backgroundColor: 'white',
         width: '60%',
@@ -148,7 +148,7 @@ const useStyles = makeStyles((theme: Theme) => createStyles({
     },
     toolbar:{
       display: 'flex',
-      backgroundColor: 'gray',
+      backgroundColor: 'black',
       color: 'white',
       fontFamily: "Georgia, 'Times New Roman', Times, serif",
     },
@@ -199,10 +199,10 @@ export const Car= withRouter((props:CarProps) => {
             text: 'Home',
             onClick: () => history.push('/')
         },
-        {
-            text: 'Sign In',
-            onclick: () => history.push('/signin')
-        },
+        // {
+        //     text: 'Sign In',
+        //     onclick: () => history.push('/signin')
+        // },
         {
             text: 'About',
             onClick: () => history.push('/about')

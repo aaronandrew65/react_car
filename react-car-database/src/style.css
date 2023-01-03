@@ -4,3 +4,10 @@
     box-sizing: inherit;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+body {
+    background-image: url('./assets/images/meritt-thomas-SWt1dHle1eA-unsplash.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
